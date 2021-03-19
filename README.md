@@ -1,5 +1,5 @@
 # Deploying a Containerized Flask Application with AWS ECS and Docker #
-##  Free Tiers version  ##
+##  Free Tier version  ##
 Amazon **Elastic Container Service** (ECS) helps schedule and orchestrate containers across a fleet of servers. It involves installing an agent on each container host that takes instructions from the ECS control plane and relays them to the local Docker image on each one.    
 We can deploy a  containerized app on Amazon **Elastic Container Service** (Amazon ECS) using **AWS Fargate launch** or **EC2 launch**.   
 **AWS Fargate** runs containers without requiring us to deploy or manage the underlying Amazon EC2 instances. This service is **not included in amazon free tier**
