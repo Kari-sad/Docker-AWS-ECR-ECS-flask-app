@@ -23,7 +23,7 @@ In this lab, I will be implementing a solution that will cost us 0$. For that, I
     docker run -p 9080:80 flask-app
 
 <p align="center">
-<img src="Screenshots\Localapp.jpg">
+<img src="https://github.com/Kari-sad/Docker-AWS-ECR-ECS-flask-app/blob/main/Screenshots/Localapp.JPG">
 </p>
 
 ## Step 3 – Send image up to AWS ##
