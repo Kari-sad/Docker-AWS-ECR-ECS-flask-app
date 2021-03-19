@@ -166,8 +166,8 @@ Replace `aws_account_id` by your aws account id
 - Click **delete cluster**
 - Go to Task definition, Click on **task definition** created previously.
 - Select task definition name. 
-- Got to actions, click deregister.
-
+- Got to actions, click **deregister**.
+- From amazon **ECR** - repositories. select **repository** created previously and click **delete**
 ## Resources: ##
 [https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html)  
 [https://docs.aws.amazon.com/AmazonECR/latest/userguide/registry_auth.html](https://docs.aws.amazon.com/AmazonECR/latest/userguide/registry_auth.html)
