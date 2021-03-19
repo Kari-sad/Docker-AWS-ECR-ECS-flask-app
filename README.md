@@ -23,7 +23,7 @@ In this lab, I will be implementing a solution that will cost us 0$. For that, I
     docker run -p 9080:80 flask-app
 
 <p align="center">
-<img src="https://github.com/Kari-sad/Docker-AWS-ECR-ECS-flask-app/blob/main/Screenshots/Localapp.JPG">
+<img src="Screenshots/Localapp.JPG">
 </p>
 
 ## Step 3 – Send image up to AWS ##
@@ -40,7 +40,7 @@ In this lab, I will be implementing a solution that will cost us 0$. For that, I
 `aws ecr create-repository --repository-name penguin-app` 
 
 <p align="center">
-<img width="900" src="https://github.com/Kari-sad/Docker-AWS-ECR-ECS-flask-app/blob/main/Screenshots/ECR_Repo.jpg">
+<img width="900" src="Screenshots/ECR_Repo.JPG">
 </p>
 
 ### Push image to ECR ###
@@ -69,7 +69,7 @@ Replace `aws_account_id` by your aws account id
 ### Copy down the URI ###
 
 <p align="center">
-<img width="900" height="400" src="https://github.com/Kari-sad/Docker-AWS-ECR-ECS-flask-app/blob/main/Screenshots/image_URI.jpg">
+<img width="900" height="400" src="Screenshots/image_URI.JPG">
 </p>
 
 
@@ -80,13 +80,13 @@ Replace `aws_account_id` by your aws account id
 - Refer to screenshots below to configure remaining steps
 
 <p align="center">
-<img width="900" height="400" src="https://github.com/Kari-sad/Docker-AWS-ECR-ECS-flask-app/blob/main/Screenshots/task1.jpg">
+<img width="900" height="400" src="Screenshots/task1.JPG">
 </p>
 <p align="center">
-<img width="900" height="400" src="https://github.com/Kari-sad/Docker-AWS-ECR-ECS-flask-app/blob/main/Screenshots/task2.jpg">
+<img width="900" height="400" src="Screenshots/task2.JPG">
 </p>
 <p align="center">
-<img width="900" height="400" src="https://github.com/Kari-sad/Docker-AWS-ECR-ECS-flask-app/blob/main/Screenshots/task3.jpg">
+<img width="900" height="400" src="Screenshots/task3.JPG">
 </p>
 
 
@@ -103,22 +103,22 @@ Replace `aws_account_id` by your aws account id
 - For **EC2 Ami Id**, use the default value which is the** Amazon Linux 2 Amazon ECS-optimized AMI**. 
 
 <p align="center">
-<img width="900" height="400" src="https://github.com/Kari-sad/Docker-AWS-ECR-ECS-flask-app/blob/main/Screenshots/ECS_cluster.jpg">  
+<img width="900" height="400" src="Screenshots/ECS_cluster.JPG">  
 </p> 
 - In the Networking section, for VPC choose either Create a new VPC to have Amazon ECS create a new VPC for the cluster to use, or choose an existing VPC to use.  
 		
 <p align="center">
-<img width="900" height="400" src="https://github.com/Kari-sad/Docker-AWS-ECR-ECS-flask-app/blob/main/Screenshots/ECS_cluster0.jpg">
+<img width="900" height="400" src="Screenshots/ECS_cluster0.JPG">
 </p>
   
 - In the Container instance **IAM role** section, choose Create new role to have Amazon ECS create a new IAM role for the container instances, or choose an existing Amazon ECS container instance (**ecsInstanceRole**) role that you have already created. 
 - Choose Create.
 
 <p align="center">
-<img  width="900" height="400" src="https://github.com/Kari-sad/Docker-AWS-ECR-ECS-flask-app/blob/main/Screenshots/ECS_cluster1.jpg">
+<img  width="900" height="400" src="Screenshots/ECS_cluster1.JPG">
 </p>
 <p align="center">
-<img width="900" height="400" src="https://github.com/Kari-sad/Docker-AWS-ECR-ECS-flask-app/blob/main/Screenshots/ECS_cluster2.jpg">
+<img width="900" height="400" src="Screenshots/ECS_cluster2.JPG">
 </p>
 
 ### Create a Service   ###
@@ -137,7 +137,7 @@ Replace `aws_account_id` by your aws account id
 	- In the Set Auto Scaling section, leave the default value and choose Next step.
 
 <p align="center">
-<img width="900" height="600" src="https://github.com/Kari-sad/Docker-AWS-ECR-ECS-flask-app/blob/main/Screenshots/service.jpg">
+<img width="900" height="600" src="Screenshots/service.JPG">
 </p>
 
 - Review the options and choose Create service.
@@ -149,13 +149,13 @@ Replace `aws_account_id` by your aws account id
 - In the ECS instances section, expand the** container instance** details where you can see the IPv4 **Public IP** address to use to access the web application.
 
 <p align="center">
-<img width="900" src="https://github.com/Kari-sad/Docker-AWS-ECR-ECS-flask-app/blob/main/Screenshots/ip.jpg">
+<img width="900" src="Screenshots/ip.JPG">
 </p>
 
 - Enter the IPv4 Public IP address in the web browser (**http://ip:80**) and you should see the penguin webpage .
 
 <p align="center">
-<img src="https://github.com/Kari-sad/Docker-AWS-ECR-ECS-flask-app/blob/main/Screenshots\app_from_aws.jpg">
+<img src="Screenshots\app_from_aws.JPG">
 </p>
 
 ## Cleanup ##
