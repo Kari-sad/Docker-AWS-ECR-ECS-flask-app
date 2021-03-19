@@ -61,7 +61,7 @@ Replace `aws_account_id` by your aws account id
 
 
 <p align="center">
-<img width="900" src="https://github.com/Kari-sad/Docker-AWS-ECR-ECS-flask-app/blob/main/Screenshots/image_in_ECR.JPG">
+<img width="900" src="Screenshots/image_in_ECR.JPG">
 </p>
 
 
