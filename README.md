@@ -40,7 +40,7 @@ In this lab, I will be implementing a solution that will cost us 0$. For that, I
 `aws ecr create-repository --repository-name penguin-app` 
 
 <p align="center">
-<img width="900" src="Screenshots/ECR_Repo.JPG">
+<img width="900" src="Screenshots/ECR_Repo.jpg">
 </p>
 
 ### Push image to ECR ###
